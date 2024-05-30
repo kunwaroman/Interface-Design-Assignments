@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My favourite song</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+    <header>
+        <!-- this section contains description of song -->
+        <!-- Title of the song -->
+        <h1>"7 Years" </h1>
+        <!-- poster of the song -->
+        <img src="photo.jpg" alt="poster of the song">
+
+
+
+
+        <!-- Here the attribute cite specifies the source of quotation -->
+        <blockquote cite="https://genius.com/Lukas-graham-7-years-lyrics">
+            In “7 Years”, the Danish group Lukas Graham reflect on their life and wonder about growing older.
+            Nostalgia from ages 7, 11, and 20 are explored before the band goes on to wonder about their life in the
+            possible future; specifically, when they are 30 or 60, or when they have kids or a wife. The song is
+            piano driven with a minimal soulful beat.
+        </blockquote>
+        <!-- Embedding youtube video -->
+        <div id="video-container">
+            <script>
+                $.getJSON('https://noembed.com/embed', { format: 'json', url: 'https://www.youtube.com/watch?v=LHCob76kigA' }, function (data) {
+                    $('#video-container').html(data.html);
+                });
+            </script>
+        </div>
+
+
+
+        <!-- Embedding youtube video -->
+        <!-- Name of the singer -->
+        <p id="artist"> &copy;Lukas Graham. Click on video to play.
+        </p>
+        <div id="info">
+            <p id="release-date">Released on: March 18, 2015</p>
+            <div id="rating">Ratings:
+                <span>&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+                <span>4/5</span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Defining a section for lyrics  -->
+        <section id="lyrics">
+            <h2>7 years by Lukas Graham</h2>
+            <p>
+                Once, I was seven years old, my mama told me
+                "Go make yourself some friends, or you'll be lonely"
+                Once, I was seven years old
+            </p>
+
+            <p>
+                It was a big, big world, but we thought we were bigger
+                Pushing each other to the limits, we were learning quicker
+                By eleven, smoking herb and drinking burning liquor
+                Never rich, so we were out to make that steady figure
+            </p>
+
+            <p>
+                Once, I was eleven years old, my daddy told me
+                "Go get yourself a wife, or you'll be lonely"
+                Once, I was eleven years old
+            </p>
+
+            <p>
+                I always had that dream like my daddy before me
+                So I started writing songs, I started writing stories
+                Something about that glory just always seemed to bore me
+                'Cause only those I really love will ever really know me
+            </p>
+
+            <p>
+                Once, I was twenty years old, my story got told
+                Before the morning sun, when life was lonely
+                Once, I was twenty years old (Lukas Graham!)
+            </p>
+
+            <p>
+                I only see my goals, I don't believe in failure
+                'Cause I know the smallest voices, they can make it major
+                I got my boys with me, at least those in favor
+                And if we don't meet before I leave, I hope I'll see you later
+            </p>
+
+            <p>
+                Once, I was twenty years old, my story got told
+                I was writing 'bout everything I saw before me
+                Once, I was twenty years old
+            </p>
+
+            <p>
+                Soon, we'll be thirty years old, our songs have been sold
+                We've traveled around the world and we're still roaming
+                Soon, we'll be thirty years old
+            </p>
+
+            <p>
+                I'm still learning about life, my woman brought children for me
+                So I can sing them all my songs, and I can tell them stories
+                Most of my boys are with me, some are still out seeking glory
+                And some I had to leave behind, my brother, I'm still sorry
+            </p>
+
+            <p>
+                Soon, I'll be sixty years old, my daddy got sixty-one
+                Remember life and then your life becomes a better one
+                I made a man so happy when I wrote a letter once
+                I hope my children come and visit once or twice a month
+            </p>
+
+            <p>
+                Soon, I'll be sixty years old, will I think the world is cold?
+                Or will I have a lot of children who can warm me?
+                Soon, I'll be sixty years old
+                Soon, I'll be sixty years old, will I think the world is cold?
+                Or will I have a lot of children who can hold me?
+                Soon, I'll be sixty years old
+            </p>
+
+            <p>
+                Once, I was seven years old, my mama told me
+                "Go make yourself some friends, or you'll be lonely"
+                Once I was seven years old
+                Once I was seven years old
+            </p>
+        </section>
+    </main>
+</body>
+
+</html>
